@@ -121,7 +121,7 @@ def get_model(point_cloud, is_training, num_class,
 
 
             
-def get_focal_loss(y_pred,label,num_class,gamma=4., alpha=10):
+def get_focal_loss(y_pred,label,num_class,gamma=2., alpha=1):
     gamma = float(gamma)
     alpha = float(alpha)
     epsilon = 1.e-9
